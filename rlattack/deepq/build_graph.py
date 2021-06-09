@@ -70,7 +70,10 @@ The functions in this file can are used to create the following functions:
 import tensorflow as tf
 import rlattack.common.tf_util as U
 #V: Cleverhans imports#
-from cleverhans.attacks import FastGradientMethod, BasicIterativeMethod, CarliniWagnerL2
+
+from cleverhans.attacks.fast_gradient_method import FastGradientMethod
+from cleverhans.attacks.basic_iterative_method import BasicIterativeMethod
+from cleverhans.attacks.carlini_wagner_l2 import CarliniWagnerL2
 from cleverhans.model import CallableModelWrapper
 
 #V: act function for test-time attacks/vanilla #
